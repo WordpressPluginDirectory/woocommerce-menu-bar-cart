@@ -1,11 +1,13 @@
 === Menu Cart for WooCommerce ===
 Contributors: pomegranate, jprummer, alexmigf, yordansoares, kluver, dpeyou
 Donate link: https://wpovernight.com/downloads/menu-cart-pro/
-Tags: woocommerce, menu, bar, cart, basket, header, shopping cart, navigation, edd, ecommerce
+Tags: woocommerce, edd, menu, cart, shopping cart
 Requires at least: 3.4
-Tested up to: 6.6
-Requires PHP: 5.3
-Stable tag: 2.14.6
+Tested up to: 6.8
+Requires PHP: 7.4
+Stable tag: 2.14.12
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Automatically displays a shopping cart in your menu bar. Works with WooCommerce and Easy Digital Downloads (EDD)
 
@@ -82,6 +84,31 @@ Once the plugin is activated navigate to Settings > Menu Cart Setup. Select your
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 2.14.12 (2025-08-27) =
+* Fix: Class `WpMenuCart` not found error when Pro is activated
+* Translations: Updated translation template (POT)
+* Tested up to WooCommerce 10.1
+
+= 2.14.11 (2025-05-12) =
+* New: PHP min supported version bumped to 7.4
+* Translations: Updated translation template (POT)
+* Tested up to WooCommerce 9.8 & WP 6.8
+
+= 2.14.10 (2024-11-04) =
+* Fix: remove files from SVN that were mistakenly left undeleted for "Menu Bar Cart"
+
+= 2.14.9 (2024-11-04) =
+* Fix: remove files from SVN that were mistakenly left undeleted
+
+= 2.14.8 (2024-10-30) =
+* New: comply with WP Plugin Check standards
+* Translations: Updated translation template (POT)
+
+= 2.14.7 (2024-10-14) =
+* Fix: Corrected notices not displaying properly.
+* Fix: Load plugin translations later in the `init` hook.
+* Tested: Compatible with WooCommerce 9.4.
 
 = 2.14.6 (2024-09-13) =
 * New: filter hook `wpmenucart_cart_url`
@@ -412,7 +439,7 @@ Initial Release
 * Added: WPML String Translation setting
 * Added: Persian translations
 * Updated: Font Awesome
-* Updated: Spanish, Portugese, Brazilian, French & Polish Translations
+* Updated: Translations
 * Fix: PHP strict warnings
 * Fix: CSS for Twenty Twelve & Twenty Fourteen
 
